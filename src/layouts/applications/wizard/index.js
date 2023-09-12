@@ -103,7 +103,7 @@ function Wizard() {
                       color="info"
                       onClick={!isLastStep ? handleNext : undefined}
                     >
-                      {isLastStep ? "send" : "next"}
+                      {isLastStep ? "Join" : "next"}
                     </VuiButton>
                   </VuiBox>
                 </VuiBox>

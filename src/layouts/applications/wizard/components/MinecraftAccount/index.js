@@ -35,7 +35,7 @@ function About() {
   const [username, setUsername] = useState('');
 
   const getImageUrl = (username) => {
-    return `https://mc-heads.net/avatar/${username}/170.png`
+    return `https://mc-heads.net/avatar/${username}/600.png`
   }
   return (
     <VuiBox>
