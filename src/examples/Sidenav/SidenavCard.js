@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -66,7 +66,7 @@ function SidenavCard() {
           </VuiBox>
           <VuiButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-dashboard/"
+            href="https://github.com/SilkePilon/OpenDeliveryBot"
             target="_blank"
             rel="noreferrer"
             size="small"

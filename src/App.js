@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -142,7 +142,7 @@ export default function App() {
           <>
             <Sidenav
               color={sidenavColor}
-              brandName="VISION UI PRO"
+              brandName="Open Delivery Bot"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -165,7 +165,7 @@ export default function App() {
         <>
           <Sidenav
             color={sidenavColor}
-            brandName="VISION UI PRO"
+            brandName="Open Delivery Bot"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}

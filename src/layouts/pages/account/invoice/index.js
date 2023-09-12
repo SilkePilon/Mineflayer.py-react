@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -63,7 +63,7 @@ function Invoice() {
                           margin: "0 auto",
                         }}
                       >
-                        VISION UI PRO
+                        Open Delivery Bot
                       </VuiTypography>
                     </VuiBox>
 

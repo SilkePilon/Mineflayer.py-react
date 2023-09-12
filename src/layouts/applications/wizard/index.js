@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -31,26 +31,25 @@ import VuiButton from "components/VuiButton";
 
 // Vision UI Dashboard PRO React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
 // Wizard page components
-import About from "layouts/applications/wizard/components/About";
-import Account from "layouts/applications/wizard/components/Account";
-import Address from "layouts/applications/wizard/components/Address";
+import MinecraftAccount from "layouts/applications/wizard/components/MinecraftAccount";
+import MSA from "layouts/applications/wizard/components/MSA";
+import Server from "layouts/applications/wizard/components/Server";
 
 function getSteps() {
-  return ["About", "Account", "Address"];
+  return ["Minecraft Account", "MSA", "Server"];
 }
 
 function getStepContent(stepIndex) {
   switch (stepIndex) {
     case 0:
-      return <About />;
+      return <MinecraftAccount />;
     case 1:
-      return <Account />;
+      return <MSA />;
     case 2:
-      return <Address />;
+      return <Server />;
     default:
       return null;
   }
@@ -66,14 +65,13 @@ function Wizard() {
 
   return (
     <DashboardLayout>
-      <DashboardNavbar />
       <VuiBox pt={3} pb={8}>
         <Grid container justifyContent="center">
           <Grid item xs={12} lg={8}>
             <VuiBox mt={6} mb={1} textAlign="center">
               <VuiBox mb={1}>
                 <VuiTypography variant="h3" fontWeight="bold" color="white">
-                  Build Your Profile
+                  Build Your Bot
                 </VuiTypography>
               </VuiBox>
               <VuiTypography variant="button" fontWeight="regular" color="white">

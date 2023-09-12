@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -131,7 +131,7 @@ function DefaultNavbar({ routes, transparent, light, action }) {
               margin: "0 auto",
             }}
           >
-            VISION UI PRO
+            Open Delivery Bot
           </VuiTypography>
         </VuiBox>
         <VuiBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>

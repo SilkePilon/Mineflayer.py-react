@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -38,63 +38,14 @@ function Footer() {
             <VuiBox mr={{ xs: 2, lg: 3, xl: 6 }}>
               <VuiTypography
                 component="a"
-                href="https://simmmple.com/"
+                href="https://github.com/SilkePilon/OpenDeliveryBot"
                 variant="body2"
                 color="white"
               >
-                Simmmple
+                GitHub
               </VuiTypography>
             </VuiBox>
-            <VuiBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <VuiTypography
-                component="a"
-                href="https://www.creative-tim.com/"
-                variant="body2"
-                color="white"
-              >
-                Creative Tim
-              </VuiTypography>
-            </VuiBox>
-            <VuiBox mr={{ xs: 0, lg: 3, xl: 6 }}>
-              <VuiTypography
-                component="a"
-                href="https://www.creative-tim.com/blog"
-                variant="body2"
-                color="white"
-              >
-                Blog
-              </VuiTypography>
-            </VuiBox>
-            <VuiBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <VuiTypography
-                component="a"
-                href="https://www.creative-tim.com/license"
-                variant="body2"
-                color="white"
-              >
-                License
-              </VuiTypography>
-            </VuiBox>
-            <VuiBox mr={{ xs: 2, lg: 3, xl: 6 }}>
-              <VuiTypography
-                component="a"
-                href="https://simmmple.com/about"
-                variant="body2"
-                color="white"
-              >
-                About
-              </VuiTypography>
-            </VuiBox>
-            <VuiBox>
-              <VuiTypography
-                component="a"
-                href="https://www.creative-tim.com/templates"
-                variant="body2"
-                color="white"
-              >
-                Products
-              </VuiTypography>
-            </VuiBox>
+            
           </VuiBox>
         </Grid>
         <Grid item xs={12} lg={8}>
@@ -118,8 +69,7 @@ function Footer() {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <VuiTypography variant="body2" color="white">
-            @2021, Made with &#10084; by <strong>Creative Tim </strong>and <strong>Simmmple</strong>{" "}
-            for a better web
+            @2023, Open Delivery Bot
           </VuiTypography>
         </Grid>
       </Grid>

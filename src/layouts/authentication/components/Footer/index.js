@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -57,30 +57,7 @@ function Footer({ full }) {
             sx={{ textAlign: "center", fontWeight: "400 !important" }}
             color="white"
           >
-            @ 2021, Made with ❤️&nbsp;&nbsp;&nbsp; by{" "}
-            <VuiTypography
-              component="a"
-              variant="button"
-              href="#"
-              sx={{ textAlign: "center", fontWeight: "500 !important" }}
-              color="white"
-              mr="2px"
-            >
-              Simmmple
-            </VuiTypography>
-            &
-            <VuiTypography
-              ml="2px"
-              mr="2px"
-              component="a"
-              variant="button"
-              href="#"
-              sx={{ textAlign: "center", fontWeight: "500 !important" }}
-              color="white"
-            >
-              Creative Tim
-            </VuiTypography>
-            for a better web
+            @ 2023, Open Delivery Bot
           </VuiTypography>
         </Grid>
         <Grid item xs={full ? 10 : 10} lg={full ? 6 : 10}>

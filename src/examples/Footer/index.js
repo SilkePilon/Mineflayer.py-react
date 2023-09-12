@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -61,25 +61,7 @@ function Footer({ links }) {
         fontSize={size.sm}
         px={1.5}
       >
-        &copy; {new Date().getFullYear()}, made with
-        <VuiBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
-          <Icon color="inherit" fontSize="inherit">
-            favorite
-          </Icon>
-        </VuiBox>
-        by
-        <Link href={"https://www.simmmple.com/"} target="_blank">
-          <VuiTypography variant="button" fontWeight="medium" color="white">
-            &nbsp;Simmmple&nbsp;
-          </VuiTypography>
-        </Link>
-        &
-        <Link href={"https://www.creative-tim.com/"} target="_blank">
-          <VuiTypography variant="button" fontWeight="medium" color="white">
-            &nbsp;Creative Tim&nbsp;
-          </VuiTypography>
-        </Link>
-        for a better web.
+        &copy; {new Date().getFullYear()}, Open Delivery Bot
       </VuiBox>
       <VuiBox
         component="ul"
@@ -107,10 +89,7 @@ function Footer({ links }) {
 // Setting default values for the props of Footer
 Footer.defaultProps = {
   links: [
-    { href: "https://www.simmmple.com/", name: "Simmmple" },
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://github.com/SilkePilon/OpenDeliveryBot", name: "Github" },
   ],
 };
 

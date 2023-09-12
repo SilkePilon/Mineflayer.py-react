@@ -1,7 +1,7 @@
 /** 
 
 =========================================================
-* Vision UI PRO React - v1.0.0
+* Open Delivery Bot React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
@@ -41,8 +41,7 @@ function About() {
           </VuiTypography>
         </VuiBox>
         <VuiTypography variant="body2" fontWeight="regular" color="text">
-          Let us know your name and email address. Use an address you don&apos;t mind other users
-          contacting you at
+          Let us know your Minecraft name and email address.
         </VuiTypography>
       </VuiBox>
       <VuiBox mt={2}>
@@ -50,32 +49,20 @@ function About() {
           <Grid item xs={12} md={4} container justifyContent="center">
             <VuiBox position="relative" height="max-content" mx="auto">
               <VuiAvatar
-                src={avatar}
+                src="https://minecraftfaces.com/wp-content/bigfaces/big-steve-face.png"
                 alt="profile picture"
-                sx={{ width: "150px", height: "150px" }}
+                sx={{ width: "170px", height: "170px" }}
                 variant="rounded"
               />
-              <VuiBox alt="spotify logo" position="absolute" right={0} bottom={0} mr={-1} mb={-1}>
-                <VuiButton
-                  variant="contained"
-                  color="info"
-                  sx={{ borderRadius: "12px", width: "35px", height: "35px" }}
-                  iconOnly
-                >
-                  <Icon>edit</Icon>
-                </VuiButton>
-              </VuiBox>
+              
             </VuiBox>
           </Grid>
           <Grid item xs={12} md={8}>
             <VuiBox mb={2}>
-              <FormField type="text" label="first name" placeholder="Eg. Michael" />
-            </VuiBox>
-            <VuiBox mb={2}>
-              <FormField type="text" label="last name" placeholder="Eg. Tomson" />
+              <FormField type="text" label="Minecraft Username" placeholder="Eg. Notch" />
             </VuiBox>
             <VuiBox>
-              <FormField type="text" label="email address" placeholder="Eg. vision@dashboard.com" />
+              <FormField type="text" label="Minecraft Email Address" placeholder="Eg. example@gmail.com" />
             </VuiBox>
           </Grid>
         </Grid>
