@@ -24,7 +24,7 @@ import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiAvatar from "components/VuiAvatar";
 import VuiButton from "components/VuiButton";
-
+import { useState } from 'react';
 // Wizard application components
 import FormField from "layouts/applications/wizard/components/FormField";
 
@@ -32,6 +32,11 @@ import FormField from "layouts/applications/wizard/components/FormField";
 import avatar from "assets/images/SimmmpleAvatar.png";
 
 function About() {
+  const [username, setUsername] = useState('');
+
+  const getImageUrl = (username) => {
+    return `https://mc-heads.net/avatar/${username}/170.png`
+  }
   return (
     <VuiBox>
       <VuiBox width="80%" textAlign="center" mx="auto" mb={4}>
@@ -49,7 +54,8 @@ function About() {
           <Grid item xs={12} md={4} container justifyContent="center">
             <VuiBox position="relative" height="max-content" mx="auto">
               <VuiAvatar
-                src="https://minecraftfaces.com/wp-content/bigfaces/big-steve-face.png"
+                // src="https://minecraftfaces.com/wp-content/bigfaces/big-steve-face.png"
+                src={getImageUrl(username)} 
                 alt="profile picture"
                 sx={{ width: "170px", height: "170px" }}
                 variant="rounded"
@@ -59,7 +65,7 @@ function About() {
           </Grid>
           <Grid item xs={12} md={8}>
             <VuiBox mb={2}>
-              <FormField type="text" label="Minecraft Username" placeholder="Eg. Notch" />
+              <FormField type="text" label="Minecraft Username" placeholder="Eg. Notch" value={username} onChange={(e) => setUsername(e.target.value)} />
             </VuiBox>
             <VuiBox>
               <FormField type="text" label="Minecraft Email Address" placeholder="Eg. example@gmail.com" />

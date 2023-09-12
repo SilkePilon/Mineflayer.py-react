@@ -47,7 +47,7 @@ function Account() {
     borders: { borderWidth },
     palette: { transparent, info },
   }) => ({
-    width: pxToRem(150),
+    width: pxToRem(250),
     height: pxToRem(150),
     borderWidth: borderWidth[2],
     mb: 1,
@@ -69,62 +69,31 @@ function Account() {
       <VuiBox width="80%" textAlign="center" mx="auto" mb={4}>
         <VuiBox mb={1}>
           <VuiTypography variant="lg" fontWeight="bold" color="white">
-            What are you doing? (checkboxes)
+            Microsoft MSA (Microsoft Account Identity)
           </VuiTypography>
         </VuiBox>
         <VuiTypography variant="button" fontWeight="regular" color="text">
-          Give us more details about you. What do you enjoy doing in your spare time?
+          <p style={{ fontWeight: 'bold' }}>Go to Here, login and enter the followig code:</p>
         </VuiTypography>
       </VuiBox>
-      <VuiBox mt={2}>
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={12} md={2.5}>
-            <VuiBox textAlign="center">
-              <VuiButton
-                color="info"
-                variant={design ? "contained" : "outlined"}
-                onClick={handleSetDesign}
-                sx={customButtonStyles}
-              >
-                <IoBuild size="54px" color="white" />
-              </VuiButton>
-              <VuiTypography variant="h6" color="white">
-                Design
-              </VuiTypography>
-            </VuiBox>
-          </Grid>
-          <Grid item xs={12} md={2.5}>
-            <VuiBox textAlign="center">
-              <VuiButton
-                color="info"
-                variant={development ? "contained" : "outlined"}
-                onClick={handleSetDevelopment}
-                sx={customButtonStyles}
-              >
-                <IoCube size="54px" color="white" />
-              </VuiButton>
-              <VuiTypography variant="h6" color="white">
-                Development
-              </VuiTypography>
-            </VuiBox>
-          </Grid>
-          <Grid item xs={12} md={2.5}>
-            <VuiBox textAlign="center">
-              <VuiButton
-                color="info"
-                variant={marketing ? "contained" : "outlined"}
-                onClick={handleSetMarketing}
-                sx={customButtonStyles}
-              >
-                <RiPencilFill size="54px" color="white" />
-              </VuiButton>
-              <VuiTypography variant="h6" color="white">
-                Marketing
-              </VuiTypography>
-            </VuiBox>
-          </Grid>
-        </Grid>
+      
+        
+      <VuiBox textAlign="center">
+        <VuiButton
+          color="info"
+          variant={design ? "contained" : "outlined"}
+          sx={customButtonStyles}
+        >
+          <h1 style={{ color: 'white' }}>DAUWEAK</h1>
+        </VuiButton>
+        <VuiTypography variant="h6" color="white">
+          MSA Code
+        </VuiTypography>
       </VuiBox>
+         
+        
+        
+      
     </VuiBox>
   );
 }
