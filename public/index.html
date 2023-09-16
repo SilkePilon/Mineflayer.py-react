@@ -25,6 +25,27 @@
     <meta name="theme-color" content="#17c1e8" />
     <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script>
+      function checkMSAStatus() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:5000/api/v1/status');
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            if (response.MSA === 'False') {
+              window.location.href = '/#/applications/wizard'; 
+            } else if (xhr.status === 0) {
+              window.location.href = '/#/applications/wizard'; }
+          } else {
+            window.location.href = '/#/applications/wizard';
+          }
+        }
+        xhr.onerror = function() {
+          window.location.href = '/#/applications/wizard';
+        };
+        xhr.send();
+      }
+    </script>
 
     <title>Open Delivery Bot React</title>
     <link
@@ -44,7 +65,7 @@
     <base href="/">
   </head>
 
-  <body>
+  <body onload="checkMSAStatus()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
