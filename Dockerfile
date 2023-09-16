@@ -1,13 +1,19 @@
-FROM node:carbon
-# Create app directory
-WORKDIR /usr/src/docker-react-sample
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-RUN npm install
-#To bundle your app’s source code inside the Docker image, use the COPY instruction:
+# ==== CONFIGURE =====
+# Use a Node 16 base image
+FROM node:18-alpine 
+# Set the working directory to /app inside the container
+WORKDIR /app
+# Copy app files
 COPY . .
-#Your app binds to port 3000 so you’ll use the EXPOSE instruction to have it mapped by the docker daemon:
+# ==== BUILD =====
+# Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
+RUN npm ci 
+# Build the app
+RUN npm run build
+# ==== RUN =======
+# Set the env to "production"
+ENV NODE_ENV production
+# Expose the port on which the app will be running (3000 is the default that `serve` uses)
 EXPOSE 3000
-CMD [“npm”, “start”]
+# Start the app
+CMD [ "npm", "run", "start" ]
