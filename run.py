@@ -55,23 +55,27 @@ try:
         account.start()
         global allow
         allow = True
-        return {'username': account.bot.username}
+        return {'status': "ok"}
 
     @app.route('/api/v1/msa')
     def API_settings():
-        username = request.args.get('username')
-        user_identifier = 'unique identifier for caching'
-
-        cache_dir = './' 
-
-        flow = Authflow(user_identifier, cache_dir)
-
-        token = await flow.getMsaToken() # Store result in variable
-
-        print(token) # Print it out
-        global MSA
-        MSA = True
-        return {'msa': f"{token}"}
+        msa_status = False
+        time.sleep(6)
+        if account.bot.username != None:
+            print(account.bot.username)
+            return {'user_code': "200"}
+            msa_status = True
+        while msa_status == False:
+            
+            try:
+                if account.msa_data['user_code'] != False:
+                    return account.msa_data
+                    msa_status = True
+                    break
+            except:
+                continue
+        mcbot.start()
+        
     
     @app.route('/api/v1/status')
     def status():
