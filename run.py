@@ -5,6 +5,8 @@ try:
     from flask import jsonify
     from flask_cors import CORS, cross_origin
     import javascript
+    import time
+    from flask import request
     from javascript import require
     Authflow, Titles  = require('prismarine-auth')
     
@@ -26,11 +28,12 @@ try:
 
     @app.route('/api/v1/login')
     def API_login():
+        email = request.args.get('email')
         global config
         config = {
-        "server_ip": "jogar.pxbroficial.com.br",
+        "server_ip": "blockmania.com",
         "server_port": "25565",
-        "bot_name": "silke2007minecraft@gmail.com",
+        "bot_name": f"{email}",
         "password": "",
         "auth": "microsoft",
         "version": "1.12",
@@ -52,7 +55,7 @@ try:
         }
         global account
         account = MinecraftBot(config=config)
-        account.start()
+        
         global allow
         allow = True
         return {'status': "ok"}
@@ -70,11 +73,9 @@ try:
             try:
                 if account.msa_data['user_code'] != False:
                     return account.msa_data
-                    msa_status = True
-                    break
             except:
                 continue
-        mcbot.start()
+        account.start()
         
     
     @app.route('/api/v1/status')
