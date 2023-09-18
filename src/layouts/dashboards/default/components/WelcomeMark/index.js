@@ -13,8 +13,7 @@ const WelcomeMark = () => {
 
   return (
     <Card sx={{ 
-      height: "340px",
-      py: "32px",
+      height: "58vh",
       backgroundSize: "cover",
       backgroundPosition: "50%"
     }}>
@@ -53,6 +52,7 @@ const WelcomeMark = () => {
               {data.coords}
             </VuiTypography>
           </VuiBox>
+          <br></br>
           <VuiTypography
             component="a"
             href="http://localhost:5001"
@@ -80,6 +80,7 @@ const WelcomeMark = () => {
             Fullscreen
             <Icon sx={{ fontWeight: "bold", ml: "5px" }}>arrow_forward</Icon>
           </VuiTypography>
+          
         </VuiBox>
       </div>
       

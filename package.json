@@ -1,6 +1,6 @@
 {
   "name": "opendeliverybot-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "author": "Silke Pilon",
   "license": "",
@@ -54,6 +54,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
     "react-select": "4.3.1",
+    "react-skinview3d": "^5.0.2",
     "react-table": "7.8.0",
     "stylis": "4.3.0",
     "stylis-plugin-rtl": "2.1.0",

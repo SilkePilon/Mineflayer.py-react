@@ -33,6 +33,7 @@ import ProgressDoughnutChart from "examples/Charts/DoughnutCharts/ProgressDoughn
 
 // General page components
 import TodoList from "layouts/pages/projects/general/components/TodoList";
+import Welcome from "layouts/dashboards/default/components/WelcomeMark"
 
 // Images
 import team3 from "assets/images/avatar4.png";
@@ -134,9 +135,9 @@ function General() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12}>
+            <Grid xs={12}>
               <VuiBox my={3}>
-                <TodoList />
+                <Welcome />
               </VuiBox>
             </Grid>
           </Grid>
